@@ -63,9 +63,11 @@ namespace SCADAv1_0
             this.groupBoxSerial.Controls.Add(this.cboxPORTCOM);
             this.groupBoxSerial.Controls.Add(this.label1);
             this.groupBoxSerial.ForeColor = System.Drawing.Color.Gainsboro;
-            this.groupBoxSerial.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxSerial.Location = new System.Drawing.Point(16, 15);
+            this.groupBoxSerial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxSerial.Name = "groupBoxSerial";
-            this.groupBoxSerial.Size = new System.Drawing.Size(212, 258);
+            this.groupBoxSerial.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxSerial.Size = new System.Drawing.Size(283, 318);
             this.groupBoxSerial.TabIndex = 0;
             this.groupBoxSerial.TabStop = false;
             this.groupBoxSerial.Text = "Serial Port";
@@ -73,9 +75,10 @@ namespace SCADAv1_0
             // btnCancel
             // 
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(117, 169);
+            this.btnCancel.Location = new System.Drawing.Point(156, 208);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(100, 28);
             this.btnCancel.TabIndex = 14;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -84,9 +87,10 @@ namespace SCADAv1_0
             // btnSave
             // 
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(21, 169);
+            this.btnSave.Location = new System.Drawing.Point(28, 208);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(100, 28);
             this.btnSave.TabIndex = 13;
             this.btnSave.Text = "Accept";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -96,20 +100,22 @@ namespace SCADAv1_0
             // 
             this.cboxParity.FormattingEnabled = true;
             this.cboxParity.Items.AddRange(new object[] {
-            "No",
+            "None",
             "Odd",
             "Even"});
-            this.cboxParity.Location = new System.Drawing.Point(84, 102);
+            this.cboxParity.Location = new System.Drawing.Point(112, 126);
+            this.cboxParity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboxParity.Name = "cboxParity";
-            this.cboxParity.Size = new System.Drawing.Size(121, 21);
+            this.cboxParity.Size = new System.Drawing.Size(160, 24);
             this.cboxParity.TabIndex = 12;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 105);
+            this.label5.Location = new System.Drawing.Point(8, 129);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 13);
+            this.label5.Size = new System.Drawing.Size(86, 17);
             this.label5.TabIndex = 11;
             this.label5.Text = "PARITY BIT:";
             // 
@@ -117,9 +123,10 @@ namespace SCADAv1_0
             // 
             this.rbtnSB2.AutoSize = true;
             this.rbtnSB2.Checked = true;
-            this.rbtnSB2.Location = new System.Drawing.Point(152, 132);
+            this.rbtnSB2.Location = new System.Drawing.Point(203, 162);
+            this.rbtnSB2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbtnSB2.Name = "rbtnSB2";
-            this.rbtnSB2.Size = new System.Drawing.Size(31, 17);
+            this.rbtnSB2.Size = new System.Drawing.Size(37, 21);
             this.rbtnSB2.TabIndex = 10;
             this.rbtnSB2.TabStop = true;
             this.rbtnSB2.Text = "2";
@@ -128,9 +135,10 @@ namespace SCADAv1_0
             // rbtnSB1
             // 
             this.rbtnSB1.AutoSize = true;
-            this.rbtnSB1.Location = new System.Drawing.Point(97, 132);
+            this.rbtnSB1.Location = new System.Drawing.Point(129, 162);
+            this.rbtnSB1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbtnSB1.Name = "rbtnSB1";
-            this.rbtnSB1.Size = new System.Drawing.Size(31, 17);
+            this.rbtnSB1.Size = new System.Drawing.Size(37, 21);
             this.rbtnSB1.TabIndex = 9;
             this.rbtnSB1.Text = "1";
             this.rbtnSB1.UseVisualStyleBackColor = true;
@@ -138,9 +146,10 @@ namespace SCADAv1_0
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 132);
+            this.label4.Location = new System.Drawing.Point(8, 162);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
+            this.label4.Size = new System.Drawing.Size(84, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "STOP BITS:";
             // 
@@ -153,17 +162,19 @@ namespace SCADAv1_0
             "7",
             "8",
             "9"});
-            this.cboxDataBits.Location = new System.Drawing.Point(84, 75);
+            this.cboxDataBits.Location = new System.Drawing.Point(112, 92);
+            this.cboxDataBits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboxDataBits.Name = "cboxDataBits";
-            this.cboxDataBits.Size = new System.Drawing.Size(121, 21);
+            this.cboxDataBits.Size = new System.Drawing.Size(160, 24);
             this.cboxDataBits.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 78);
+            this.label3.Location = new System.Drawing.Point(8, 96);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.Size = new System.Drawing.Size(83, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "DATA BITS:";
             // 
@@ -177,45 +188,50 @@ namespace SCADAv1_0
             "38400",
             "57600",
             "115200"});
-            this.cboxBAUD.Location = new System.Drawing.Point(84, 48);
+            this.cboxBAUD.Location = new System.Drawing.Point(112, 59);
+            this.cboxBAUD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboxBAUD.Name = "cboxBAUD";
-            this.cboxBAUD.Size = new System.Drawing.Size(121, 21);
+            this.cboxBAUD.Size = new System.Drawing.Size(160, 24);
             this.cboxBAUD.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 51);
+            this.label2.Location = new System.Drawing.Point(8, 63);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 13);
+            this.label2.Size = new System.Drawing.Size(91, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "BAUD RATE:";
             // 
             // cboxPORTCOM
             // 
             this.cboxPORTCOM.FormattingEnabled = true;
-            this.cboxPORTCOM.Location = new System.Drawing.Point(84, 21);
+            this.cboxPORTCOM.Location = new System.Drawing.Point(112, 26);
+            this.cboxPORTCOM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboxPORTCOM.Name = "cboxPORTCOM";
-            this.cboxPORTCOM.Size = new System.Drawing.Size(121, 21);
+            this.cboxPORTCOM.Size = new System.Drawing.Size(160, 24);
             this.cboxPORTCOM.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 24);
+            this.label1.Location = new System.Drawing.Point(8, 30);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.Size = new System.Drawing.Size(51, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "PORT:";
             // 
             // FormConnectivity
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(82)))), ((int)(((byte)(93)))));
-            this.ClientSize = new System.Drawing.Size(862, 492);
+            this.ClientSize = new System.Drawing.Size(1149, 606);
             this.Controls.Add(this.groupBoxSerial);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormConnectivity";
             this.Text = "FormConnectivity";
             this.Load += new System.EventHandler(this.FormConnectivity_Load);

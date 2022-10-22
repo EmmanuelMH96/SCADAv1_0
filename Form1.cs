@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 using System.Threading;
+
 namespace SCADAv1_0
 {
     public partial class Form1 : Form
@@ -137,6 +138,29 @@ namespace SCADAv1_0
         {
             string [] damepuertos = SerialPort.GetPortNames();
             return SerialPort.GetPortNames();
+        }
+
+        public void openSerialCOM(string[] str)
+        {
+            try
+            {
+                serialPort1.PortName = str[0];
+                serialPort1.BaudRate = Convert.ToInt32(str[1]);
+                serialPort1.DataBits = Convert.ToInt32(str[2]);
+                serialPort1.Parity = (Parity)Enum.Parse(typeof(Parity), str[3]);
+                serialPort1.StopBits = (StopBits)Enum.Parse(typeof(StopBits), str[4]);
+                serialPort1.Open();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message,"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void closeSERIALCOM()
+        {
+            if (serialPort1.IsOpen)
+                serialPort1.Close();
         }
         #endregion
     }

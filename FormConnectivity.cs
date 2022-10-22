@@ -33,11 +33,11 @@ namespace SCADAv1_0
             serialConfig[2] = cboxDataBits.Text;
             serialConfig[3] = cboxParity.Text;
             if (rbtnSB1.Checked)
-                serialConfig[4] = "1";
+                serialConfig[4] = "One";
             else if (rbtnSB2.Checked)
-                serialConfig[4] = "2";
+                serialConfig[4] = "Two";
 
-            MessageBox.Show(getSerialConfig());
+            Form1.instance.openSerialCOM(serialConfig); // Open SerialCommunication
         }
 
         public String getSerialConfig()
@@ -53,7 +53,14 @@ namespace SCADAv1_0
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult Mbtn = MessageBox.Show("Changes will be discarded","Alert",
+                                                MessageBoxButtons.OKCancel,
+                                                MessageBoxIcon.Warning);
+
+            if (Mbtn == DialogResult.OK)
+                this.Close();
+                Form1.instance.closeSERIALCOM(); //Close serial communication
+            //this.Close();
         }
     }
 }
